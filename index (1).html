@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northfield Student Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><span class="logo">N</span><span>Northfield</span></div>
+    <nav id="nav" aria-label="Main">
+      <a href="#dashboard" data-v="dashboard"><i>▦</i><span>Dashboard</span></a>
+      <a href="#schedule" data-v="schedule"><i>◷</i><span>Schedule</span></a>
+      <a href="#grades" data-v="grades"><i>✎</i><span>Grades</span></a>
+      <a href="#announcements" data-v="announcements"><i>✉</i><span>News</span><b id="unread" hidden></b></a>
+      <a href="#profile" data-v="profile"><i>☺</i><span>Profile</span></a>
+    </nav>
+    <button class="theme" id="theme" type="button">Switch theme</button>
+  </aside>
+  <main id="main" tabindex="-1"></main>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
